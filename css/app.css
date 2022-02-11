@@ -1,0 +1,153 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+  font-family: 'lato', sans-serif;
+}
+
+img {
+  height: 90px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* --- */
+
+html {
+  font-size: 16px;
+}
+
+body {
+  height: 100vh;
+  font-family: sans-serif;
+  background: #212534;
+}
+
+:root {
+	--card-height: 450px;
+	--card-width: calc(var(--card-height) / 1.7);
+  }
+
+/* --- */
+
+header {
+  height: 12%;
+  width: 100%;
+
+  padding: 15px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: rgb(8, 8, 8);
+}
+
+
+header div h1 {
+  margin-bottom: 7.5px;
+}
+
+header img:first-child {
+  height: 35px;
+}
+
+header img:nth-child(2) {
+  display: none;
+}
+
+header img:last-child {
+  height: 70px;
+}
+
+/* --- */
+
+nav {
+  height: 5%;
+  width: 100%;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  background-color: rgb(8, 8, 8);
+}
+
+nav a {
+  margin: 60px;
+
+  text-decoration: none;
+  color: rgb(141, 140, 140);
+
+  transition: 300ms;
+}
+
+nav a:hover {
+  transition: 300ms;
+  color: rgb(255, 255, 255);
+}
+
+/* --- */
+
+main {
+  min-height: 73%;
+  width: 100%;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;  
+}
+
+main > div {
+  width: var(--card-width);
+	height: var(--card-height);
+	font-size: 1.5em;
+  
+	padding: 40px;
+  margin: 50px;
+	border-radius: 6px;
+  
+	position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  background-color: #191c29;
+	cursor: pointer;
+}
+
+main > div > img {
+height: 150px;
+}
+
+h2 {
+  font-size: 1em;
+  color: rgb(2, 216, 38);
+}
+
+p {
+  color: white;
+}
+/* --- */
+
+footer {
+  height: 10%;
+  width: 100%;
+  padding: 15px;
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  border-top: 2.5px solid rgb(129, 129, 129);
+  text-shadow: 1.5px 1.5px 3px rgba(0, 0, 0, 0.6);
+
+  color: rgb(141, 140, 140);
+  background-color: rgb(8, 8, 8);
+}
