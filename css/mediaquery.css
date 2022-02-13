@@ -1,0 +1,54 @@
+@media only screen and (min-width: 769px) {
+  header {
+    height: 100px;
+  }
+
+  header img:last-child {
+    order: 1;
+    display: block;
+  }
+
+  header img:nth-child(2) {
+    order: 2;
+    display: none;
+  }
+
+  header img:first-child {
+    order: 3;
+  }
+
+  nav {
+    justify-content: space-evenly;
+  }
+
+  nav::before {
+    top: 160px;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0px auto;
+  }
+
+  main > div {
+    margin: 50px auto;
+  }
+}
+
+@media only screen and (min-width: 1106px) {
+  main {
+    /* height para que la página nunca acabe antes de la pantalla */
+    min-height: 75vh;
+
+    margin: 0px auto;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  main > div {
+    margin: 50px 30px;
+  }
+}
